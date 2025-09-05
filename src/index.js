@@ -1,6 +1,8 @@
 require("dotenv").config()
 const { Client, IntentsBitField } = require("discord.js")
-
+const eventHandler = require("./handlers/eventHandler")
+const buildConfig = require("./utils/buildConfig")
+const drawLine = require("./utils/drawLine")
 const client = new Client({
   intents: [
     IntentsBitField.Flags.Guilds,
@@ -8,11 +10,6 @@ const client = new Client({
     IntentsBitField.Flags.GuildMessages,
     IntentsBitField.Flags.MessageContent
   ]
-})
-
-client.on("clientReady", (c)=>{
-  console.clear()
-  console.log(`${c.user.tag} is now online!`)
 })
 
 const loginBot = (TOKEN)=>{
@@ -23,4 +20,12 @@ const loginBot = (TOKEN)=>{
   }
 }
 
-loginBot(process.env.DISCORD_TOKEN)
+const initialze = ()=>{
+  console.clear()
+  drawLine()
+  buildConfig()
+  eventHandler(client)
+  loginBot(process.env.DISCORD_TOKEN)
+}
+
+initialze()
