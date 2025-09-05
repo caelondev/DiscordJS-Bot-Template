@@ -23,8 +23,13 @@ A clean and modular Discord.js v14+ bot template designed to help you build and 
    ```
 
 3. **Configure your bot:**
-   - Rename `config.example.json` to `config.json`
-   - Fill in your bot token, prefix, owner ID, and other required settings
+   - Fill in `config.json` with your configurations
+   - Create a `.env` file
+   ```.env
+   DISCORD_TOKEN = YOUR_DISCORD_TOKEN
+   ```
+   ```
+   ```
 
 4. **Run the bot:**
    ```bash
