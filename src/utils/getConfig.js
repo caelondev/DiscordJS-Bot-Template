@@ -12,8 +12,8 @@ module.exports = () => {
     console.log("⚠️ 'devConfig.json' not found! Using 'config.json' instead. ✅")
     outputMessage = "✅ Config loaded successfully from 'config.json'!"
   } else {
-    console.log("✅ 'devConfig.json' found! Prioritizing dev config over 'config.json'. 🛠️")
-    outputMessage = "✅ Config loaded successfully from 'developmentConfig.json'! (Dev mode)"
+    console.log("✅ 'devConfig.json' found! Prioritizing devConfig over 'config.json'. 🛠️")
+    outputMessage = "✅ Config loaded successfully from 'devConfig.json'! (Dev mode)"
     usedConfig = devConfigPath
   }
   

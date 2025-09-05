@@ -31,7 +31,7 @@ A clean and modular Discord.js v14+ bot template designed to help you build and 
 
 4. **Run the bot:**
    ```bash
-   node src/index.js
+   node init.js
    ```
 
 ## Folder Structure
