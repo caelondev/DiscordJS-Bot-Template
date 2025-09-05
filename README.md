@@ -28,8 +28,6 @@ A clean and modular Discord.js v14+ bot template designed to help you build and 
    ```.env
    DISCORD_TOKEN = YOUR_DISCORD_TOKEN
    ```
-   ```
-   ```
 
 4. **Run the bot:**
    ```bash
