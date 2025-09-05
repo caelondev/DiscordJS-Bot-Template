@@ -6,8 +6,8 @@ module.exports = {
   // options: Array[Object]
   // deleted: boolean
 
-  callback: (client, interaction)=>{
-    interaction.reply(`Pong! Latency: ${client.ws.ping}ms`)
+  callback: async(client, interaction)=>{
+    await interaction.reply(`**Pong! ${client.ws.ping}ms**`)
     
   }
 }

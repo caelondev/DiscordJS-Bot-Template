@@ -9,7 +9,7 @@ const configPath = path.resolve(__dirname, "../../config.json");
 // Define which fields should be sanitized in config.json
 const cleanedValues = {
   botClientId: "",
-  testServer: "",
+  testServers: [],
   devs: [],
 };
 
