@@ -40,8 +40,10 @@ A clean and modular Discord.js v14+ bot template designed to help you build and 
 📦root
  ┣ 📂src
  ┃ ┣ 📂commands/
- ┃ ┃ ┣ 📄ping.js
- ┃ ┃ ┗ 📄info.js
+ ┃ ┃ ┣ 📂 misc/
+ ┃ ┃ ┃ ┗ 📄 ping.js
+ ┃ ┃ ┗ 📂 moderation/
+ ┃ ┃   ┗ 📄 ban.js
  ┃ ┣ 📂events/
  ┃ ┣ 📂utils/
  ┃ ┗ 📄index.js
